@@ -1,5 +1,52 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* ---------------
+COMMON STYLES
+------------------ */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*----------------
+ COMPONENT STYLES
+ -----------------*/
+
+/* Header Styles */
+
+.nav-link {
+  font-weight: 600;
+}
+.nav-logo {
+  font-weight: 500;
+}
+
+/* To change the height of slider image */
+/* .carousel-item {
+  float: none !important;
+  margin-right: 100% !important;
+}
+.slider-img {
+  height: 90vmin !important;
+} */
+.slider-container {
+  position: relative !important;
+}
+.banner-details {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+}
+.main-description {
+  line-height: 1.5;
+}
+.header-btn {
+  background-color: #fff;
+  padding: 0.75rem 3rem;
+  font-weight: 700;
 }
