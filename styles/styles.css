@@ -19,15 +19,17 @@ body {
 }
 
 /* To change the height of slider image */
-/* .carousel-item {
-  float: none !important;
-  margin-right: 100% !important;
-}
-.slider-img {
-  height: 90vmin !important;
-} */
-.slider-container {
+.carousel-innger {
   position: relative !important;
+}
+.carousel-item {
+  max-height: 82vh;
+}
+/* Here i had to clear the float gave bootstrap to control the height of carousel images */
+.carousel-item::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .banner-details {
   z-index: 100;
