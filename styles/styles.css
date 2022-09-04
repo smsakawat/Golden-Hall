@@ -1,7 +1,9 @@
 /* ---------------
 COMMON STYLES
 ------------------ */
-
+:root {
+  --primary-color: #3f87f5;
+}
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -59,4 +61,34 @@ section {
   background-color: #fff;
   padding: 0.75rem 3rem;
   font-weight: 700;
+}
+
+/* Package Styles */
+.package-benefits {
+  list-style: none;
+  padding-left: 0;
+}
+/* .package-benefits li::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url(../resources/icons/circle-wavy-check.svg);
+} */
+.icon {
+  margin-right: 12px;
+}
+.price-btn {
+  background: #f496d217;
+  mix-blend-mode: normal;
+  border-radius: 24px;
+  padding: 0.75rem 4rem;
+  cursor: pointer;
+}
+.active-btn {
+  background: #fff;
+  mix-blend-mode: normal;
+  border-radius: 24px;
+  padding: 0.75rem 4rem;
+  cursor: pointer;
 }
