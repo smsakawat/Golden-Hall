@@ -1,10 +1,14 @@
 /* ---------------
 COMMON STYLES
 ------------------ */
+
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+header,
+section {
+  margin-bottom: 8rem;
+}
 /*----------------
  COMPONENT STYLES
  -----------------*/
@@ -18,12 +22,16 @@ body {
   font-weight: 500;
 }
 
-/* To change the height of slider image */
+/* To change the height of slider image..though it's using '! important' totally avoided but here to override some bootstrap styles i had to use this for practice purpose */
 .carousel-innger {
   position: relative !important;
 }
 .carousel-item {
+  min-height: 80vh;
   max-height: 82vh;
+}
+.carousel-item img {
+  filter: blur(5px) grayscale(20%) !important;
 }
 /* Here i had to clear the float gave bootstrap to control the height of carousel images */
 .carousel-item::after {
