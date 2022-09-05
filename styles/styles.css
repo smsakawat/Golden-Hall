@@ -75,6 +75,24 @@ section {
   width: 20px;
   background-image: url(../resources/icons/circle-wavy-check.svg);
 } */
+
+#package-section {
+  padding: 0 !important;
+}
+.package-container {
+  gap: 1.75rem;
+}
+.package-item {
+  transition: transform 0.2s ease-out;
+}
+.package-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 42px 34px rgba(0, 0, 0, 0.09);
+}
+.package-active:hover {
+  box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+}
+
 .icon {
   margin-right: 12px;
 }
@@ -93,4 +111,4 @@ section {
   cursor: pointer;
 }
 
-/* Reviews Styles */
+/* Review Styles */
