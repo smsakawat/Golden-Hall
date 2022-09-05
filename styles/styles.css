@@ -48,36 +48,67 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 } */
-.slide-item {
+.carousel-item {
+  width: 100%;
+  background-position: center top;
+  height: 600px;
+  max-height: 84vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-one {
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.55) 21.92%,
       rgba(0, 0, 0, 0.418) 160.04%,
       rgba(0, 0, 0, 0.121) 160.06%
     ),
-    url(../resources/images/banner.png);
-  background-position: center;
-  min-height: 82vh;
-  max-height: 84vh;
+    url(../resources/images/banner.png) center no-repeat;
+}
+.slide-two {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 21.92%,
+      rgba(0, 0, 0, 0.418) 160.04%,
+      rgba(0, 0, 0, 0.121) 160.06%
+    ),
+    url(../resources/images/marriage.png) center no-repeat;
+}
+.slide-three {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 21.92%,
+      rgba(0, 0, 0, 0.418) 160.04%,
+      rgba(0, 0, 0, 0.121) 160.06%
+    ),
+    url(../resources/images/party.png) center no-repeat;
 }
 .main-title {
-  font-weight: 600;
-  font-size: 48px;
+  font-weight: 700;
+  font-size: 54px;
   line-height: 1.2;
-  letter-spacing: 0.8px;
+  letter-spacing: -0.9px;
 }
-.main-description {
-  line-height: 1.5;
-}
+
 .header-btn {
+  border: none;
   background-color: #fff;
   padding: 0.75rem 3rem;
   font-weight: 700;
   border-radius: 4px;
-  transition: transform 0.2s ease-in, hover 0.2s ease-in;
+  transition: transform 0.2s ease-in, hover 0.3s ease-in;
 }
 .header-btn:hover {
   transform: scale(1.12);
+}
+
+/* Event styles */
+.forward-arrow {
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+}
+.explore-btn:hover .forward-arrow {
+  transform: translateX(6px) !important;
 }
 
 /* Package Styles */
@@ -158,3 +189,10 @@ footer small {
   display: block;
   color: rgba(162, 160, 160, 0.649);
 }
+@media only screen and (max-width: 992px) {
+  .main-title {
+    font-size: 5vmax;
+  }
+}
+
+/* THE END */
