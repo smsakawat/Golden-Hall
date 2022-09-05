@@ -6,6 +6,7 @@ COMMON STYLES
 }
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 header,
 section {
@@ -111,4 +112,33 @@ section {
   cursor: pointer;
 }
 
-/* Review Styles */
+/* Footer Styles */
+footer {
+  background-color: #0b0d17;
+}
+footer .social-icons {
+  gap: 8px;
+}
+footer .social-icons .icon {
+  font-size: 20px;
+  color: lightgray;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+footer .social-icons .icon:hover {
+  transform: scale(0.9);
+  color: rgb(173, 173, 173);
+}
+footer a {
+  padding-bottom: 4px;
+}
+footer a:hover {
+  color: lightgray !important;
+}
+footer p {
+  color: #d9dbe1;
+}
+footer small {
+  display: block;
+  color: rgba(162, 160, 160, 0.649);
+}
