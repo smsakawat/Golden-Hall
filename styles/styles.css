@@ -92,3 +92,11 @@ section {
   padding: 0.75rem 4rem;
   cursor: pointer;
 }
+
+/* Reviews Styles */
+.review-container {
+  gap: 2%;
+}
+.review-item {
+  width: 32%;
+}
