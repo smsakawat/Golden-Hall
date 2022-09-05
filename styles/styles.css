@@ -1,6 +1,7 @@
 /* ---------------
 COMMON STYLES
 ------------------ */
+
 :root {
   --primary-color: #3f87f5;
 }
@@ -26,7 +27,7 @@ section {
 }
 
 /* .carousel {
-  position: relative !important;
+  position: relative;
 }
 .carousel-item {
   min-height: 80vh;
@@ -41,6 +42,7 @@ section {
   display: block;
   clear: both;
 }
+
 .banner-details {
   z-index: 100;
   position: absolute;
@@ -48,6 +50,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 } */
+
 .carousel-item {
   width: 100%;
   background-position: center top;
@@ -63,7 +66,7 @@ section {
       rgba(0, 0, 0, 0.418) 160.04%,
       rgba(0, 0, 0, 0.121) 160.06%
     ),
-    url(../resources/images/banner.png) center no-repeat;
+    url(../resources/images/banner.png);
 }
 .slide-two {
   background: linear-gradient(
@@ -72,7 +75,7 @@ section {
       rgba(0, 0, 0, 0.418) 160.04%,
       rgba(0, 0, 0, 0.121) 160.06%
     ),
-    url(../resources/images/marriage.png) center no-repeat;
+    url(../resources/images/marriage.png);
 }
 .slide-three {
   background: linear-gradient(
@@ -81,7 +84,7 @@ section {
       rgba(0, 0, 0, 0.418) 160.04%,
       rgba(0, 0, 0, 0.121) 160.06%
     ),
-    url(../resources/images/party.png) center no-repeat;
+    url(../resources/images/party.png);
 }
 .main-title {
   font-weight: 700;
@@ -116,13 +119,6 @@ section {
   list-style: none;
   padding-left: 0;
 }
-/* .package-benefits li::before {
-  content: "";
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  background-image: url(../resources/icons/circle-wavy-check.svg);
-} */
 
 #package-section {
   padding: 0 !important;
