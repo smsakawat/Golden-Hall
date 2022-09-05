@@ -25,18 +25,17 @@ section {
   font-weight: 500;
 }
 
-/* To change the height of slider image..though it's using '! important' totally avoided but here to override some bootstrap styles i had to use this for practice purpose */
-.carousel-innger {
+/* .carousel {
   position: relative !important;
 }
 .carousel-item {
   min-height: 80vh;
-  max-height: 82vh;
+  max-height: 90vmin;
 }
 .carousel-item img {
   filter: blur(5px) grayscale(20%) !important;
 }
-/* Here i had to clear the float gave bootstrap to control the height of carousel images */
+
 .carousel-item::after {
   content: "";
   display: block;
@@ -48,6 +47,18 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+} */
+.slide-item {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 21.92%,
+      rgba(0, 0, 0, 0.418) 160.04%,
+      rgba(0, 0, 0, 0.121) 160.06%
+    ),
+    url(../resources/images/banner.png);
+  background-position: center;
+  min-height: 82vh;
+  max-height: 84vh;
 }
 .main-title {
   font-weight: 600;
@@ -62,6 +73,11 @@ section {
   background-color: #fff;
   padding: 0.75rem 3rem;
   font-weight: 700;
+  border-radius: 4px;
+  transition: transform 0.2s ease-in, hover 0.2s ease-in;
+}
+.header-btn:hover {
+  transform: scale(1.12);
 }
 
 /* Package Styles */
