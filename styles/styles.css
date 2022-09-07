@@ -195,6 +195,10 @@ footer small {
   .carousel-item {
     height: 400px;
   }
+  header,
+  section {
+    margin-bottom: 4rem;
+  }
 }
 
 /* THE END */
