@@ -57,7 +57,7 @@ section {
   height: 600px;
   max-height: 84vh;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .slide-one {
   background: linear-gradient(
@@ -115,16 +115,16 @@ section {
 }
 
 /* Package Styles */
+.package-section {
+  width: 100% !important;
+  overflow: hidden;
+}
 .package-benefits {
   list-style: none;
   padding-left: 0;
 }
-
-#package-section {
-  padding: 0 !important;
-}
 .package-container {
-  gap: 1.75rem;
+  gap: 1.25rem;
 }
 .package-item {
   transition: transform 0.2s ease-out;
@@ -185,9 +185,15 @@ footer small {
   display: block;
   color: rgba(162, 160, 160, 0.649);
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   .main-title {
-    font-size: 5vmax;
+    font-size: 32px;
+  }
+  header p {
+    font-size: 14px;
+  }
+  .carousel-item {
+    height: 400px;
   }
 }
 
